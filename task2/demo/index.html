@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: whitesmoke;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input,
+    button {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box; 
+      font-size: 14px;
+      object-fit: cover;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    #generate {
+      background-color: #008CBA;
+      color: white;
+      border: none;
+    }
+
+    #add {
+      background-color: #008CBA;
+      color: white;
+      border: none;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    td input[type="password"],
+    td input[type="text"] {
+      width: auto;
+      padding: 5px;
+      margin: 0;
+      border: none;
+      background: transparent;
+      text-align: center;
+    }
+
+    td button {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Password Manager</h2>
+
+  <div>
+    <input type="text" id="website" placeholder="Website Name">
+    <input type="text" id="username" placeholder="Username">
+    <input type="text" id="password" placeholder="Password">
+    <button id="generate">Generate Random Password</button>
+    <button id="add">Add Password</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Website</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="passwordList"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

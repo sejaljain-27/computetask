@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills - Sejal Jain</title>
+  <style>
+    body{
+      background-color: #0a0a23;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background: #0a0a23;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    h2 {
+      color: #ff4dd2;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background-color: #f094e3;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .skill:hover {
+      transform: scale(1.05);
+      background-color: #e91e63;
+      color: #fff;
+    }
+
+
+    /* Responsive */
+
+    @media (max-width: 480px) {
+
+      .skill {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+
+      .skills {
+        gap: 10px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="skills container">
+    <h2 class="skills">My Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Canva</div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
